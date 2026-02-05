@@ -1,0 +1,155 @@
+# Конфигурация демо-сайта для Hugo Card Theme
+# Репозиторий: https://github.com/zharinoff/demo-hugo-cardtheme-site
+
+baseURL = 'https://zharinoff.github.io/demo-hugo-cardtheme-site/'
+languageCode = 'ru-ru'
+title = 'Это поле title в конфиге hugo.toml в корне сайта'
+theme = 'my-card'
+
+# Настройки сборки
+buildDrafts = true
+buildFuture = false
+buildExpired = false
+enableRobotsTXT = true
+
+# Таксономии (для блога)
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+# Параметры сайта
+[params]
+  # Основные контакты (отображаются в шапке/подвале)
+  email = 'test-email@example.com'
+  phone = '+7 999 123-45-67'
+  
+  # Социальные сети
+  telegram = 'testtelegramlogin'
+  vk = 'id123456'
+  github = 'testgithublogin'
+  twitter = 'testtwitterlogin'
+  
+  # Виджет быстрой связи (плавающая кнопка)
+  [params.widget]
+    enabled = true
+    type = 'telegram'
+    text = 'Написать в Telegram'
+    url = 'https://t.me/m_zharinoff'
+  
+  # Настройки логотипа
+  [params.logo]
+    text = 'Текст из поля params.logo в hugo.toml'
+    # или image = '/images/logo.png'
+  
+  # Настройки копирайта
+  copyright = '© 2026 Демонстрационный сайт. Все права защищены.'
+  
+  # Настройки блога
+  [params.blog]
+    postsPerPage = 10
+    showReadingTime = true
+    dateFormat = '2 January 2006 15:04'
+  
+  # Настройки сервисов
+  [params.services]
+    showPrice = true
+    showDuration = true
+  
+  # Настройки кейсов
+  [params.cases]
+    featuredCount = 1
+    showTestimonials = true
+
+# Меню навигации (шапка)
+[[menu.main]]
+  name = 'Главная'
+  url = '/'
+  weight = 1
+
+[[menu.main]]
+  name = 'Услуги'
+  url = '/services/'
+  weight = 2
+
+[[menu.main]]
+  name = 'Кейсы'
+  url = '/cases/'
+  weight = 3
+
+[[menu.main]]
+  name = 'Блог'
+  url = '/blog/'
+  weight = 4
+
+[[menu.main]]
+  name = 'Обо мне'
+  url = '/about/'
+  weight = 5
+
+[[menu.main]]
+  name = 'Контакты'
+  url = '/contact/'
+  weight = 6
+
+# Настройки социальных ссылок (для подвала)
+[[params.social]]
+  name = 'Telegram'
+  icon = 'telegram'
+  url = 'https://t.me/m_zharinoff'
+
+[[params.social]]
+  name = 'GitHub'
+  icon = 'github'
+  url = 'https://github.com/zharinoff'
+
+[[params.social]]
+  name = 'VK'
+  icon = 'vk'
+  url = 'https://vk.com/id123456'
+
+# Open Graph для соцсетей
+[params.openGraph]
+  image = '/images/og-image.jpg'
+  type = 'website'
+  siteName = 'Демонстрационный сайт'
+
+# Google Analytics (опционально)
+# googleAnalytics = 'UA-XXXXXXXXX-X'
+
+# Параметры для sitemap
+[sitemap]
+  changefreq = 'monthly'
+  priority = 0.5
+  filename = 'sitemap.xml'
+
+# Настройки разметки
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = 'monokai'
+
+# Настройки обработки изображений
+[imaging]
+  quality = 85
+  anchor = 'smart'
+  resampleFilter = 'lanczos'
+
+# Параметры для поиска (если будет поиск)
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+  page = ['HTML']
+  section = ['HTML', 'RSS']
+
+# Отключение ненужных форматов
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = 'application/json'
+    baseName = 'index'
+    isPlainText = true
+
+# Настройки сервера для разработки
+[server]
+  port = 1313
+

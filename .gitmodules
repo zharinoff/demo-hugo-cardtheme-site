@@ -1,0 +1,3 @@
+[submodule "themes/my-card"]
+	path = themes/my-card
+	url = https://github.com/zharinoff/hugo-card-theme.git

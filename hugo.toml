@@ -1,9 +1,6 @@
-# Конфигурация демо-сайта для Hugo Card Theme
-# Репозиторий: https://github.com/zharinoff/demo-hugo-cardtheme-site
-
 baseURL = 'https://zharinoff.github.io/demo-hugo-cardtheme-site/'
 languageCode = 'ru-ru'
-title = 'Это поле title в конфиге hugo.toml в корне сайта'
+title = 'Демонстрационный вариант сайта-визитки'
 theme = 'my-card'
 
 # Настройки сборки
@@ -20,14 +17,13 @@ enableRobotsTXT = true
 # Параметры сайта
 [params]
   # Основные контакты (отображаются в шапке/подвале)
-  email = 'test-email@example.com'
-  phone = '+7 999 123-45-67'
+  email = 'm.zharinoff@vk.com'
+  phone = '+7 (913) 933-65-00'
   
   # Социальные сети
-  telegram = 'testtelegramlogin'
-  vk = 'id123456'
-  github = 'testgithublogin'
-  twitter = 'testtwitterlogin'
+  telegram = '@m_zharinoff'
+  vk = 'id335231683'
+  github = 'zharinoff'
   
   # Виджет быстрой связи (плавающая кнопка)
   [params.widget]
@@ -38,8 +34,8 @@ enableRobotsTXT = true
   
   # Настройки логотипа
   [params.logo]
-    text = 'Текст из поля params.logo в hugo.toml'
-    # или image = '/images/logo.png'
+    text = 'Демонстрационный логотип'
+    image = '/images/logo.webp'
   
   # Настройки копирайта
   copyright = '© 2026 Демонстрационный сайт. Все права защищены.'
@@ -105,7 +101,7 @@ enableRobotsTXT = true
 [[params.social]]
   name = 'VK'
   icon = 'vk'
-  url = 'https://vk.com/id123456'
+  url = 'https://vk.com/m.zharinoff'
 
 # Open Graph для соцсетей
 [params.openGraph]

@@ -21,7 +21,7 @@ enableRobotsTXT = true
   phone = '+7 (913) 933-65-00'
   
   # Социальные сети
-  telegram = '@m_zharinoff'
+  telegram = 'm_zharinoff'
   vk = 'id335231683'
   github = 'zharinoff'
   

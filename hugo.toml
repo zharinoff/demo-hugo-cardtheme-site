@@ -1,5 +1,5 @@
 baseURL = 'https://zharinoff.github.io/demo-hugo-cardtheme-site/'
-languageCode = 'ru-ru'
+languageCode = 'ru-RU'
 title = 'Демонстрационный вариант сайта-визитки'
 theme = 'my-card'
 
@@ -35,7 +35,7 @@ enableRobotsTXT = true
   # Настройки логотипа
   [params.logo]
     text = 'Демонстрационный логотип'
-    image = '/images/logo.webp'
+    image = 'images/logo.webp'
   
   # Настройки копирайта
   copyright = '© 2026 Демонстрационный сайт. Все права защищены.'

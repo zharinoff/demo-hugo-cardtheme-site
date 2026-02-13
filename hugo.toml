@@ -17,7 +17,7 @@ enableRobotsTXT = true
   email = 'm.zharinoff@vk.com'
   phone = '+7 (913) 933-65-00'
   telegram = 'm_zharinoff'
-  vk = 'id335231683'
+  vk = 'm.zharinoff'
   github = 'zharinoff'
   
   # Настройки виджета (url генерируется в шаблоне)
@@ -83,7 +83,7 @@ enableRobotsTXT = true
 
 [[menu.main]]
   name = 'Контакты'
-  url = '/contact/'
+  url = '/contacts/'
   weight = 6
 
 # Технические настройки

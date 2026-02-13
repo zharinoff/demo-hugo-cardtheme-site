@@ -1,5 +1,5 @@
 +++
-title = "Second Service"
+title = "Вторая услуга"
 date = 2026-02-05T17:02:04+07:00
 description = "Краткое описание услуги"
 subtitle = "Подзаголовок услуги"
@@ -17,12 +17,12 @@ features = [
 [[process]]
   step = "1"
   title = "Обсуждаем задачу"
-  description = "..."
+  description = "Описание шага"
 
 [[process]]
   step = "2"
   title = "Заключаем договор"
-  description = "..."
+  description = "Описание шага"
 
 # FAQ (массив объектов)
 [[faq]]

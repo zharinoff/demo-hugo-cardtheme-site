@@ -1,5 +1,5 @@
 +++
-title = "First Case"
+title = "Первый кейс"
 date = 2026-02-05T17:02:38+07:00
 description = "Краткое описание кейса"
 client = "Название компании"
@@ -12,15 +12,15 @@ featured = false  # Показывать на главной
 
 # Изображения для кейса
 [[images]]
-src = "/images/cases/cover.jpg"
+src = "images/cases/cover.jpg"
 alt = "Обложка кейса"
 
 [[images]]
-src = "/images/cases/before.jpg"
+src = "images/cases/before.jpg"
 alt = "До"
 
 [[images]]
-src = "/images/cases/after.jpg"
+src = "images/cases/after.jpg"
 alt = "После"
 +++
 

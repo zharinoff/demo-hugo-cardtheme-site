@@ -1,13 +1,37 @@
-title = "Second Post"
-date = 2026-02-05T17:03:26+07:00
-description = "Краткое описание поста"
++++
+title = "Второй пост"
+date = 2026-02-13T12:49:49+07:00
+draft = true
+description = "Краткое описание поста для превью и SEO"
 author = "Автор"
-tags = ["тег1", "тег2"]
+tags = []
+categories = []
 readingTime = true
 
-# Изображения для поста
-[[images]]
-src = "/images/blog/cover.jpg"
-alt = "Обложка поста"
+# Обложка поста (для карточек, шаринга)
+cover = "images/blog/cover.jpg"
+cover_alt = "Описание обложки"
+
+# Галерея изображений внутри поста
+[[gallery]]
+src = "images/blog/photo1.jpg"
+alt = "Описание фото 1"
+caption = "Подпись к фото (опционально)"
+
+[[gallery]]
+src = "images/blog/photo2.jpg"
+alt = "Описание фото 2"
+caption = "Подпись к фото (опционально)"
 +++
 
+# Second Post
+
+Введение — кратко о чём пост.
+
+## Основная часть
+
+Тут какой-то текст в Markdown.
+
+## Заключение
+
+Выводы и призыв к действию (опционально).

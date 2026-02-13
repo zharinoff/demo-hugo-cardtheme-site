@@ -3,41 +3,35 @@ languageCode = 'ru-RU'
 title = 'Демонстрационный вариант сайта-визитки'
 theme = 'my-card'
 
-# Настройки сборки
 buildDrafts = true
 buildFuture = false
 buildExpired = false
 enableRobotsTXT = true
 
-# Таксономии (для блога)
 [taxonomies]
   tag = 'tags'
   category = 'categories'
 
-# Параметры сайта
+# ЕДИНСТВЕННЫЙ ИСТОЧНИК КОНТАКТНЫХ ДАННЫХ
 [params]
-  # Основные контакты (отображаются в шапке/подвале)
   email = 'm.zharinoff@vk.com'
   phone = '+7 (913) 933-65-00'
-  
-  # Социальные сети
   telegram = 'm_zharinoff'
   vk = 'id335231683'
   github = 'zharinoff'
   
-  # Виджет быстрой связи (плавающая кнопка)
+  # Настройки виджета (url генерируется в шаблоне)
   [params.widget]
     enabled = true
     type = 'telegram'
     text = 'Написать в Telegram'
-    url = 'https://t.me/m_zharinoff'
   
-  # Настройки логотипа
+  # Логотип
   [params.logo]
     text = 'Демонстрационный логотип'
     image = 'images/logo.webp'
   
-  # Настройки копирайта
+  # Копирайт
   copyright = '© 2026 Демонстрационный сайт. Все права защищены.'
   
   # Настройки блога
@@ -46,17 +40,22 @@ enableRobotsTXT = true
     showReadingTime = true
     dateFormat = '2 January 2006 15:04'
   
-  # Настройки сервисов
+  # Настройки разделов
   [params.services]
     showPrice = true
     showDuration = true
   
-  # Настройки кейсов
   [params.cases]
     featuredCount = 1
     showTestimonials = true
+  
+  # Open Graph
+  [params.openGraph]
+    image = '/images/og-image.jpg'
+    type = 'website'
+    siteName = 'Демонстрационный сайт'
 
-# Меню навигации (шапка)
+# МЕНЮ — ТОЛЬКО СТРУКТУРА, БЕЗ КОНТАКТОВ
 [[menu.main]]
   name = 'Главная'
   url = '/'
@@ -87,65 +86,33 @@ enableRobotsTXT = true
   url = '/contact/'
   weight = 6
 
-# Настройки социальных ссылок (для подвала)
-[[params.social]]
-  name = 'Telegram'
-  icon = 'telegram'
-  url = 'https://t.me/m_zharinoff'
-
-[[params.social]]
-  name = 'GitHub'
-  icon = 'github'
-  url = 'https://github.com/zharinoff'
-
-[[params.social]]
-  name = 'VK'
-  icon = 'vk'
-  url = 'https://vk.com/m.zharinoff'
-
-# Open Graph для соцсетей
-[params.openGraph]
-  image = '/images/og-image.jpg'
-  type = 'website'
-  siteName = 'Демонстрационный сайт'
-
-# Google Analytics (опционально)
-# googleAnalytics = 'UA-XXXXXXXXX-X'
-
-# Параметры для sitemap
+# Технические настройки
 [sitemap]
   changefreq = 'monthly'
   priority = 0.5
   filename = 'sitemap.xml'
 
-# Настройки разметки
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     style = 'monokai'
 
-# Настройки обработки изображений
 [imaging]
   quality = 85
   anchor = 'smart'
   resampleFilter = 'lanczos'
 
-# Параметры для поиска (если будет поиск)
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
   page = ['HTML']
   section = ['HTML', 'RSS']
 
-# Отключение ненужных форматов
 [outputFormats]
   [outputFormats.JSON]
     mediaType = 'application/json'
     baseName = 'index'
     isPlainText = true
 
-# Настройки сервера для разработки
 [server]
   port = 1313
-

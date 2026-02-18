@@ -15,7 +15,7 @@ enableRobotsTXT = true
 # ЕДИНСТВЕННЫЙ ИСТОЧНИК КОНТАКТНЫХ ДАННЫХ
 [params]
   email = 'm.zharinoff@vk.com'
-  phone = '+7 (913) 933-65-00'
+  phone = '+7 (777) 777 77-77 '
   telegram = 'm_zharinoff'
   vk = 'm.zharinoff'
   github = 'zharinoff'
